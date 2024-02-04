@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo  leitura</title>
-    <script src="https://cdn.tailwindcss.com"></script>
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="index.css">
 </head>
-<body class="bg-red-950">
-    
+<body class="">
+    <header class="h-20 bg-[#141D37] flex items-center justify-between p-2 ">
+        <a href=""><img src="./img/novo.png" class="w-44" alt=""></a>
+        <button id="btn-menu" class="text-white">
+            <img src="./img/Vector.png" class="p-2 md:hidden" alt="">
+        </button>
+        <div id="menu" class=" flex flex-col absolute top-20 left-0 w-full bg-[#141D37]  max-md:overflow-hidden transition-all h-0 p-0 md:relative md:h-auto md:flex-row md:justify-around  md:top-0 md:left-0 md:items-center">
+            <nav>
+                <ul class="flex flex-col pl-2  text-white   transition-colors  md:flex-row md:items-center">
+                    <li id="articles" class="cursor-pointer h-full p-2 group relative  ">
+                        Artigos
+                        <ul class="pl-2  flex flex-col gap-1 max-md:overflow-hidden transition-all h-0 md:group-hover:h-auto md:absolute md:top-16 overflow-hidden bg-[#141D37]" id="menu-articles">
+                            <li class="p-2"><a href="">Poesia 1</a></li>
+                            <li class="p-2"><a href="">Poesia 1</a></li>
+                            <li class="p-2"><a href="">Poesia 1</a></li>
+                        </ul>
+                    </li>
+                    <li id="proses" class="cursor-pointer p-2">
+                        Poesias Faladas
+                            <ul class="pl-2  flex flex-col gap-1 overflow-hidden transition-all h-0 " id="menu-talking">
+                            <li class="p-2"><a href="">Poesia falada 1</a></li>
+                            <li class="p-2"><a href="">Poesia falada 1</a></li>
+                            <li class="p-2"><a href="">Poesia falada 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="hover:bg-yellow-600 rounded-md   p-2"><a href="">Patrocinadores</a></li>
+                    <li class="hover:bg-yellow-600 rounded-md transition-colors  p-2"><a href="">Contactos</a></li>
+                </ul>
+            </nav>
+                <div class="p-2 flex flex-col items-start gap-2 w-full md:flex-row md:w-auto md:items-center" >
+                    <form class="flex items-center gap-1 rounded-lg w-full " action="">
+                        <input class="flex-1 p-1 border-0 outline-transparent bg-[#172347]" type="text" placeholder="Procurar...">
+                        <img src="./img/fi-br-search.png" alt="">
+                    </form>
+                    <img src="img/doideira.png" alt="">
+                    <img src="./img/124.png" alt="">
+                </div>
+        </div>
+      
+    </header>
+    <script>
+        const btnMEnu = document.getElementById("btn-menu")
+        const btnArtice = document.getElementById("articles")
+        const btnTalking = document.getElementById("proses")
+       btnTalking.addEventListener("click", ()=>{
+            const articlesTalking = document.getElementById("menu-talking")
+            articlesTalking.classList.toggle("h-auto")
+      
+       })
+        btnArtice.addEventListener("click", ()=>{
+            const articles = document.getElementById("menu-articles")
+            articles.classList.toggle("h-auto")
+        })
+        btnMEnu.addEventListener("click", () => {
+            const menu = document.getElementById("menu")
+            menu.classList.toggle("h-auto")
+            menu.classList.toggle("p-2")
+        })
+    </script>
 </body>
 </html>
