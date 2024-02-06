@@ -13,10 +13,14 @@
 <body class="">
     <header class="h-20 bg-[#141D37] flex items-center justify-between p-2 ">
         <a href=""><img src="./img/novo.png" class="w-44" alt=""></a>
+        <form  class="flex items-center gap-1 rounded-lg w-full md:hidden" action="">
+            <input id="search-mobile" class="invisible py-1 focus:outline-none text-zinc-100 text-sm  transition-all flex-1 p-1 border-0 outline-transparent bg-[#172347] visibility:" type="text" placeholder="Procurar...">
+            <img width="16px" src="./img/lupa.png" class="cursor-pointer  w-6 h-6" id="btn-search-mobile" alt="">
+        </form>
         <button id="btn-menu" class="text-white">
             <img src="./img/Vector.png" class="p-2 md:hidden" alt="">
         </button>
-        <div id="menu" class="flex flex-col absolute top-20 left-0 w-full bg-[#141D37]  max-md:overflow-hidden transition-all h-0 p-0 md:relative md:flex-row md:justify-around  md:top-0 md:left-0 md:items-center md:h-full ">
+        <div id="menu" class="flex flex-col z-50 absolute top-20 left-0 w-full bg-[#141D37]  max-md:overflow-hidden transition-all h-0 p-0 md:relative md:flex-row md:justify-around  md:top-0 md:left-0 md:items-center md:h-full ">
             <nav class="md:h-full">
                 <ul class="flex flex-col pl-2 md:h-full text-white   transition-colors  md:flex-row md:items-center">
                     <li id="articles" class="md:flex items-center md:h-full  cursor-pointer  p-2 group relative  ">
@@ -40,34 +44,36 @@
                 </ul>
             </nav>
                 <div class="p-2 flex flex-col items-start gap-2 w-full md:flex-row md:w-auto md:items-center" >
-                    <form class="flex items-center gap-1 rounded-lg w-full " action="">
-                        <input class="flex-1 p-1 border-0 outline-transparent bg-[#172347]" type="text" placeholder="Procurar...">
-                        <img src="./img/fi-br-search.png" alt="">
+                    <form  class="flex items-center gap-1 rounded-lg w-full max-md:hidden" action="">
+                        <input id="search" class="invisible py-1 focus:outline-none text-zinc-100 text-sm  transition-all flex-1 p-1 border-0 outline-transparent bg-[#172347] visibility:" type="text" placeholder="Procurar...">
+                        <img src="./img/lupa.png" class="cursor-pointer  w-6 h-6" id="btn-search" alt="">
                     </form>
-                    <img src="img/doideira.png" alt="">
-                    <img src="./img/124.png" alt="">
+                    <div class="flex gap-2 ">
+                        <img class="cursor-pointer w-6 h-6" src="img/doideira.png" alt="">
+                        <img class="cursor-pointer w-6 h-6" src="./img/coracao.png" alt=""> 
+                    </div>
+                    
                 </div>
         </div>
     </header>
-        <section class="bg-[url(./img/unsplash_Oaqk7qqNh_c.png)] flex flex-col items-center justify-center p-4">
-            <h1 class="font-extrabold text-[40px] text-white text-center mt-4">Sejam todos bem-vindos <br>ao tudo leitura</h1>
-            <button class="bg-[#172347] rounded-lg text-white p-2 mb-4">Vídeo de apresentação</button>
+        <section class="bg-[url(./img/banner.png)] flex flex-col items-center justify-center p-4 pb-8">
+            <h1 class="font-extrabold leading-none text-[40px] text-white text-center mt-4 mb-6">Sejam todos bemvindos <br>ao tudo leitura</h1>
+            <button class="bg-[#172347] rounded-lg text-white p-1 px-2  mb-5 relative ">Vídeo de apresentação <img class="absolute -bottom-5 right-0 mx-auto left-0 w-9 h-9" src="./img/down-blue.png" alt=""></button>
 
-            <iframe class="rounded-lg max-w-lg w-full" src="https://www.youtube.com/embed/U659xvG75Bk" frameborder="0"   height="452"></iframe>
-            <div class="absolute top-0 w-full h-full bg-black/35 -z-10"></div>
-        </section>
+            <iframe class="rounded-lg max-w-[800px] h-[452px] w-full mb-14 max-md:h-[252px]" src="https://www.youtube.com/embed/U659xvG75Bk" frameborder="0"   ></iframe>
+          </section>
 
-        <section class="bg-[#172347] p-2">
-            <div class="bg-white rounded-lg h-24 my-8"><h1 class="text-[60px] text-center max-md:text-[20px]">Fundadores</h1></div>
+        <section class="bg-[#172347] p-2 relative">
+            <div class="bg-white rounded-lg h-24 my-8 flex items-center justify-center relative"><h1 class="text-[60px] text-center max-md:text-[30px]">Fundadores</h1></div>
+            <img class="absolute -bottom-3 right-0 mx-auto left-0 w-24 h-24" src="./img/down.png" alt="">
         </section>
 
         <div class="bg-[#172347] flex justify-start w-full p-4 md:pl-0">
             <div class="bg-white rounded-lg w-full p-4 md:max-w-xl">
-                <div class="flex flex-col items-center md:flex-row">
-                    <img src="./img/corio.png" alt="">
-                    <div class="flex flex-col gap-0">
-                        <span>Fundador</span>
-                        <strong class="text-[20px]">Prof. Coriolano</strong>
+                <div class="flex items-center gap-4 md:flex-row">
+                    <img src="./img/corio.png" class="w-32 h-32 object-cover" alt="">
+                    <div class="flex flex-col gap-0 ">
+                        <span class="p-0 leading-none "><span class="text-zinc-500 font-mono">Fundador</span><br><strong class="text-[15px] p-0 ">Prof. Coriolano</strong></span>
                     </div>
                 </div>
                 <div class="text-center p-4">
@@ -75,11 +81,11 @@
                     Atualmente é Contador de Carreira da Prefeitura Municipal de Ipojuca( Região Metropolitana de Recife localizada nos entornos da Praia de Porto de Galinhas e o Porto de Suape). Na Controladoria Geral do Município trabalha com Auditoria Governamental, Contabilidade Pública e Controle Interno. Sua grande paixão é escrever e lecionar assuntos de contabilidade.  </div>
                     <div>
                         <h1 class="text-center">Redes socias</h1>
-                        <div class="flex gap-2 items-center justify-center">
-                            <a href=""><img src="./img/image 1.png" alt=""></a>
-                            <a href=""><img src="./img/image 2.png" alt=""></a>
-                            <a href=""><img src="./img/Group 294.png" alt=""></a>
-                            <a href=""><img src="./img/image 5.png" alt=""></a>
+                        <div class="flex gap-1 items-center justify-center">
+                            <a href="oj"><img src="./img/instagram.png" width="25px" alt=""></a>
+                            <a href="klb"><img src="./img/whatsapp.png" width="25px" alt=""></a>
+                            <a href="çlj"><img src="./img/youtube.png" width="25px" alt=""></a>
+                            <a href="çlh"><img src="./img/globo.png" width="25px" alt=""></a>
                         </div>
                     </div>
                   
@@ -87,11 +93,11 @@
         </div>
         <div class="bg-[#172347] flex justify-end w-full p-4 md:pr-0">
             <div class="bg-white rounded-lg w-full p-4 md:max-w-xl">
-                <div class="flex flex-col items-center md:flex-row">
-                    <img src="./img/caue.png" alt="">
-                    <div class="flex flex-col gap-0">
-                        <span>Fundador</span>
-                        <strong class="text-[20px]">Cauê Coriolano</strong>
+                <div class="flex items-center gap-4 md:flex-row pl-4">
+                    <img src="./img/caue.jpeg"  class="rounded-full w-32 h-32" alt="">
+                    <div class="flex flex-col gap-1">
+                        <span class="p-0 leading-none"><span class="text-zinc-500 font-mono">Fundador</span> <br><strong class="text-[15px] p-0 ">Cauê Coriolano</strong></span>
+                       
                     </div>
                 </div>
                 <div class="text-center p-4">
@@ -102,10 +108,11 @@
         </div>
 
         <section class="bg-[#172347] p-2">
-            <div class="bg-white rounded-lg h-24 my-8"><h1 class="text-[60px] text-center max-md:text-[20px]">O que é o tudo leitura </h1></div>
+            <div class="bg-white rounded-lg h-24 my-8 flex items-center justify-center"><h1 class="text-[60px] text-center max-md:text-[22px]">O que é o tudo leitura </h1></div>
         </section>
         <div class="bg-[#172347] px-2">
             <div class="bg-white max-w-[820px] mx-auto rounded-lg p-4 relative px-44 max-md:px-4">
+                <img class="absolute -top-14 left-0 w-28 h-28" src="./img/uu.png" alt="">
                 <img src="./img/29 1.png" class="absolute top-2 left-2 max-md:hidden" alt="">
                 <img src="./img/30 1.png" class="absolute bottom-2 right-2 w-44 max-md:hidden"  alt="">
                 <p class="my-4">Tudo leitura é um blog criado pelo CEO do Grupo Empresarial Cifras Lucivando Coriolano, comumente conhecido em redes sociais como Professor Coriolano e o sócio Diretor de Marketing, design e assuntos estratégicos do Grupo Cauê Coriolano. Nossa missão é romper barreiras, oferecendo conteúdos através de artigos de opinião que versam de tudo sobre tudo, como por exemplo: contabilidade,política,economia etc... Além de poesia falada em vídeos com poetas parceiros nossos. Nossa equipe do TUDO LEITURA é formada desde escritores, poetas, marketing, vendas,desenvolvedores e engenheiro de software.</p>
@@ -120,31 +127,47 @@
                
                 <div class="max-w-5xl mx-auto relative overflow-x-auto" id="gallery-wrapper">
                     <div class=" flex gap-2 flex-nowrap" id="gallery">
-                        <div class="56 h-60 flex-shrink-0 bg-black item">
-                             <a href=""><img class="w-56 h-60" src="./img/1.png" alt=""></a> 
-                        </div>
-                        <div class="56 h-60 flex-shrink-0 bg-black item">
-                            <a href=""><img class="w-56 h-60" src="./img/2.png" alt=""></a> 
-                       </div>
-                       <div class="56 h-60 flex-shrink-0 bg-black item">
-                            <a href=""><img class="w-56 h-60" src="./img/3.png" alt=""></a> 
-                        </div>
-                        <div class="56 h-60 flex-shrink-0 bg-black item">
-                            <a href=""><img class="w-56 h-60" src="./img/4.png" alt=""></a> 
-                        </div>
-                        <div class="56 h-60 flex-shrink-0 bg-black item">
-                            <a href=""><img class="w-56 h-60" src="./img/1.png" alt=""></a> 
-                       </div>
-                       <div class="56 h-60 flex-shrink-0 bg-black item">
-                           <a href=""><img class="w-56 h-60" src="./img/2.png" alt=""></a> 
-                      </div>
-                      <div class="56 h-60 flex-shrink-0 bg-black item">
-                           <a href=""><img class="w-56 h-60" src="./img/3.png" alt=""></a> 
-                       </div>
-                       <div class="56 h-60 flex-shrink-0 bg-black item">
-                           <a href=""><img class="w-56 h-60" src="./img/4.png" alt=""></a> 
-                       </div>
+                        <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">1</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/1 (1).png" alt=""></a> 
+                         </div>
+                        <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">2</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/3.png" alt=""></a> 
+                         </div>
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">3</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/4.png" alt=""></a> 
+                         </div>
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">4</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/1 (1).png" alt=""></a> 
+                         </div>
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">5</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/4.png" alt=""></a> 
+                         </div>
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">6</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/2.png" alt=""></a> 
+                         </div>
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">7</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/2.png" alt=""></a> 
+                         </div>
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">8</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/2.png" alt=""></a> 
+                         </div>
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">9</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/2.png" alt=""></a> 
+                         </div>
                       
+                         <div class="w-72 h-60 flex-shrink-0 bg-[black] flex items-center item relative overflow-hidden">
+                            <span class="font-extrabold text-[215px] text-left text-white">10</span> 
+                            <a href="" class="absolute -right-11"><img class="w-56 h-60" src="./img/2.png" alt=""></a> 
+                         </div>
                     </div>
                 </div>
 
@@ -152,8 +175,8 @@
             </div>
         </div>
         
-        <div class="bg-[#172347] flex w-full justify-around px-6 max-md:flex-col ">
-            <img src="./img//logo.png" width="400px" alt="">
+        <div class="bg-[#172347] flex w-full justify-around px-6 max-md:flex-col pb-8">
+            <img src="./img/logo.png"   width="400px" height="200px" alt="">
 
             <div>
                 <h1 class="text-white font-extrabold text-lg">Menu</h1>
@@ -165,14 +188,15 @@
                 </ul>
             </div>
 
-            <div class="py-8">
-                <h1 class="text-white text-[18px]">Redes Socias</h1>
-                <ul class="flex  items-center justify-start">
-                    <li><img src="./img/image 1.png" alt=""></li>
-                    
-                    <li><img src="./img/image 2.png" alt=""></li>
-                </ul>
+            <div class=" flex flex-col items-start   ">
+                <h1 class="text-white text-[18px] m-0 p-0">Redes Socias</h1>
+                <div class="flex m-0 p-0 gap-1 mt-1">
+                 <a href=""><img class="w-9 h-9 m-0 p-0" src="./img/instagram.png" alt=""> </a>
+                 <a href=""><img class="w-9 h-9" src="./img/whatsapp.png" alt=""> </a>
+                </div>
             </div>
+
+
         </div>
         
         <div class=" bg-white h-16 flex items-center justify-center ">
@@ -182,14 +206,30 @@
         const btnMEnu = document.getElementById("btn-menu")
         const btnArtice = document.getElementById("articles")
         const btnTalking = document.getElementById("proses")
+        const btnSearch = document.getElementById("btn-search")
+        const btnSearchMobile = document.getElementById("btn-search-mobile")
+
+        btnSearchMobile.addEventListener("click", ()=>{
+            const searchArea = document.getElementById("search-mobile")   
+            searchArea.classList.toggle("invisible")
+       }) 
+
+        btnSearch.addEventListener("click", ()=>{
+            const searchArea = document.getElementById("search")   
+            searchArea.classList.toggle("invisible")
+       })   
        btnTalking.addEventListener("click", ()=>{
             const articlesTalking = document.getElementById("menu-talking")
             articlesTalking.classList.toggle("h-auto")
-      
+            const articles = document.getElementById("menu-articles")
+            articles.classList.remove("h-auto")
        })
         btnArtice.addEventListener("click", ()=>{
             const articles = document.getElementById("menu-articles")
             articles.classList.toggle("h-auto")
+
+            const articlesTalking = document.getElementById("menu-talking")
+            articlesTalking.classList.remove("h-auto")
         })
         btnMEnu.addEventListener("click", () => {
             const menu = document.getElementById("menu")
