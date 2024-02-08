@@ -13,10 +13,13 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
+.efeito-titulo-topo,.efeito-video, .efeito-caue, .efeito-coriolano, .efeito-tudo, .efeito-fundador {
+ /*   visibility: hidden;*/
+}
 @media(max-width: 520px)
 {
     html,body{
         font-size: 87.5%;
     }
 }
+
