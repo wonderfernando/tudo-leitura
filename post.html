@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo  leitura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="index.css">
+</head>
+<body class="">
+    <header class="h-20 bg-[#141D37] flex items-center justify-between p-2 ">
+        <a href=""><img src="./img/novo.png" class="w-80" alt=""></a>
+        <form  class="flex items-center gap-1 rounded-lg w-full md:hidden" action="">
+            <input id="search-mobile" class="invisible py-1 focus:outline-none text-zinc-100 text-sm  transition-all flex-1 p-1 border-0 outline-transparent bg-[#172347] visibility:" type="text" placeholder="Procurar...">
+            <img width="16px" src="./img/lupa.png" class="cursor-pointer  w-6 h-6" id="btn-search-mobile" alt="">
+        </form>
+        <button id="btn-menu" class="text-white mx-3
+        ">
+            <img src="./img/menu-aberto (1).png" width="16px" class="   w-6 h-6 md:hidden object-cover" alt="">
+        </button>
+        <div id="menu" class="flex flex-col z-50 absolute top-20 left-0 w-full bg-[#141D37]  max-md:overflow-hidden transition-all h-0 p-0 md:relative md:flex-row md:justify-around  md:top-0 md:left-0 md:items-center md:h-full ">
+            <nav class="md:h-full">
+                <ul class="flex flex-col pl-2 md:h-full text-white   transition-colors  md:flex-row md:items-center">
+                    <li id="articles" class="md:flex items-center md:h-full  cursor-pointer  p-2 group relative  ">
+                        Artigos
+                        <ul class="px-2 md:w-40  flex flex-col gap-1 max-md:overflow-hidden transition-all h-0 md:group-hover:h-auto md:absolute md:top-14 md:mt-2 overflow-hidden bg-white text-zinc-900  rounded-md" id="menu-articles">
+                            <li class="p-2 hover:bg-[#141D37] hover:text-white rounded-md"><a href="">Contabilidade</a></li>
+                            <li class="hover:bg-[#141D37] hover:text-white rounded-md p-2"><a href="">Capitalismo</a></li>
+                            <li class="p-2 hover:bg-[#141D37] rounded-md hover:text-white mb-3"><a href="">Psicologia</a></li>
+                        </ul>
+                    </li>
+                    <li id="proses" class="md:flex items-center md:h-full  cursor-pointer  p-2 group relative ">
+                        Poesias Faladas
+                            <ul class="px-2 md:w-40  flex flex-col gap-1 max-md:overflow-hidden transition-all h-0 md:group-hover:h-auto md:absolute md:top-14 md:mt-2 overflow-hidden bg-white text-zinc-900  rounded-md" id="menu-talking">
+                            <li class="p-2 hover:bg-[#141D37] hover:text-white rounded-md"><a href="">Poesia falada 1</a></li>
+                            <li class="p-2 hover:bg-[#141D37] hover:text-white rounded-md"><a href="">Poesia falada 2</a></li>
+                            <li class="p-2 hover:bg-[#141D37] hover:text-white rounded-md mb-3"><a href="">Poesia falada 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="hover:bg-[#141D37] rounded-md   p-2"><a href="">Patrocinadores</a></li>
+                    <li class="hover:bg-[#141D37] rounded-md transition-colors  p-2"><a href="">Contactos</a></li>
+                </ul>
+            </nav>
+                <div class="p-2 flex flex-col items-start gap-2 w-full md:flex-row md:w-auto md:items-center" >
+                    <form  class="flex items-center gap-1 rounded-lg w-full max-md:hidden" action="">
+                        <input id="search" class="invisible py-1 focus:outline-none text-zinc-100 text-sm  transition-all flex-1 p-1 border-0 outline-transparent bg-[#172347] visibility:" type="text" placeholder="Procurar...">
+                        <img src="./img/lupa.png" class="cursor-pointer  w-6 h-6" id="btn-search" alt="">
+                    </form>
+                    <div class="flex gap-2 ">
+                        <img class="cursor-pointer w-6 h-6" src="img/packard-bell (1).png" alt="">
+                        <img class="cursor-pointer w-6 h-6" src="./img/coracao.png" alt=""> 
+                    </div>
+                    
+                </div>
+        </div>
+    </header>
+    <section class="flex mt-14 px-8 gap-10 max-md:flex-col items-start">
+        <div class="flex-1 py-4 ">
+            <div class="bg-zinc-300 rounded-2xl">
+                <img class="w-full" src="./img/Rectangle.png" alt="">
+                <ul class="flex list-disc gap-8 ml-16 mt-4">
+                    <li>amor</li>
+                    <li>saude</li>
+                    <li>paz</li>
+                </ul>
+                <div class="m-4 p-4">
+                    <h1 class="text-3xl">Titulo do artigo</h1>
+                    <p class="text-sm">Texto do artigo aqui</p>
+                </div>
+            </div>
+           
+            <div class="flex gap-2 items-center my-16">
+                <img src="./img/Rectangle2.png" class="rounded-full w-24 h-24" alt="">
+                <div class="flex flex-col text-xs">
+                    <span>Autor: Caue Coriolano</span>
+                    <span>Categoria: Contabilidade</span>
+                    <span>País: Brasil</span>
+                </div>
+            </div>
+
+            <div class="bg-zinc-300  p-8 rounded-3xl flex flex-wrap items-center gap-4 justify-around ">
+                <div class="w-52 ">
+                    <div class="relative">
+                        <img src="./img/Rectangle2.png" alt="">
+                        <img src="./img/coracao.png" class="absolute top-0 right-3 w-10" alt="">
+                    </div>
+                    
+                    <h1 class="text-center">Titulo do artigo</h1>
+                    <span class="text-zinc-500">Dezembro 11/2024</span>
+                </div>
+                <div class="w-52 ">
+                    <div class="relative">
+                        <img src="./img/Rectangle2.png" alt="">
+                        <img src="./img/coracao.png" class="absolute top-0 right-3 w-10" alt="">
+                    </div>
+                    
+                    <h1 class="text-center">Titulo do artigo</h1>
+                    <span class="text-zinc-500">Dezembro 11/2024</span>
+                </div>
+                <div class="w-52 ">
+                    <div class="relative">
+                        <img src="./img/Rectangle2.png" alt="">
+                        <img src="./img/coracao.png" class="absolute top-0 right-3 w-10" alt="">
+                    </div>
+                    
+                    <h1 class="text-center">Titulo do artigo</h1>
+                    <span class="text-zinc-500">Dezembro 11/2024</span>
+                </div>
+            
+            </div>
+
+
+        </div>
+
+        <div class="w-72 bg-zinc-300 rounded-3xl max-md:justify-center max-md:mb-16 max-md:flex-wrap max-md:w-full max-md:flex-row mt-4 mr-6 flex flex-col gap-16 items-center p-4 pt-12">
+            <div class="w-52 ">
+                <div class="relative">
+                    <img src="./img/Rectangle2.png" alt="">
+                    <img src="./img/coracao.png" class="absolute top-0 right-3 w-10" alt="">
+                </div>
+                
+                <h1 class="text-center">Titulo do artigo</h1>
+                <span class="text-zinc-500">Dezembro 11/2024</span>
+            </div>
+            <div class="w-52 ">
+                <div class="relative">
+                    <img src="./img/Rectangle2.png" alt="">
+                    <img src="./img/coracao.png" class="absolute top-0 right-3 w-10" alt="">
+                </div>
+                
+                <h1 class="text-center">Titulo do artigo</h1>
+                <span class="text-zinc-500">Dezembro 11/2024</span>
+            </div>
+            <div class="w-52 ">
+                <div class="relative">
+                    <img src="./img/Rectangle2.png" alt="">
+                    <img src="./img/coracao.png" class="absolute top-0 right-3 w-10" alt="">
+                </div>
+                
+                <h1 class="text-center">Titulo do artigo</h1>
+                <span class="text-zinc-500">Dezembro 11/2024</span>
+            </div>
+        </div>
+    </section>
+ 
+        <div class="bg-[#172347] flex w-full justify-around px-6 max-md:flex-col pb-8">
+           <div class="max-md:w-full relative min-h-[100px]">
+                <img src="./img/logo.png" class="max-md:absolute max-md:top-0 max-md:-left-10"   width="400px" height="200px" alt="">
+           </div> 
+
+            <div>
+                <h1 class="text-white font-extrabold text-lg">Menu</h1>
+                <ul class="text-white">
+                    <li><a href="">Artigos</a></li>
+                    <li><a href="">Poesias Faladas</a></li>
+                    <li><a href="">Patrocinadores</a></li>
+                    <li><a href="">Contatos</a></li>
+                </ul>
+            </div>
+
+            <div class=" flex flex-col items-start   ">
+                <h1 class="text-white text-[18px] m-0 p-0">Redes Socias</h1>
+                <div class="flex m-0 p-0 gap-1 mt-1">
+                 <a href=""><img class="w-9 h-9 m-0 p-0" src="./img/instagram.png" alt=""> </a>
+                 <a href=""><img class="w-9 h-9" src="./img/whatsapp.png" alt=""> </a>
+                </div>
+            </div>
+
+
+        </div>
+        
+        <div class=" bg-white h-16 flex items-center justify-center ">
+            <p>©Tudo leitura. Todos os direitos reservados.</p>
+        </div>
+    <script>
+        const btnMEnu = document.getElementById("btn-menu")
+        const btnArtice = document.getElementById("articles")
+        const btnTalking = document.getElementById("proses")
+        const btnSearch = document.getElementById("btn-search")
+        const btnSearchMobile = document.getElementById("btn-search-mobile")
+
+        btnSearchMobile.addEventListener("click", ()=>{
+            const searchArea = document.getElementById("search-mobile")   
+            searchArea.classList.toggle("invisible")
+       }) 
+
+        btnSearch.addEventListener("click", ()=>{
+            const searchArea = document.getElementById("search")   
+            searchArea.classList.toggle("invisible")
+       })   
+       btnTalking.addEventListener("click", ()=>{
+            const articlesTalking = document.getElementById("menu-talking")
+            articlesTalking.classList.toggle("h-auto")
+            const articles = document.getElementById("menu-articles")
+            articles.classList.remove("h-auto")
+       })
+        btnArtice.addEventListener("click", ()=>{
+            const articles = document.getElementById("menu-articles")
+            articles.classList.toggle("h-auto")
+
+            const articlesTalking = document.getElementById("menu-talking")
+            articlesTalking.classList.remove("h-auto")
+        })
+        btnMEnu.addEventListener("click", () => {
+            const menu = document.getElementById("menu")
+            menu.classList.toggle("h-auto")
+            menu.classList.toggle("p-2")
+        })
+
+        //*Carroussel*///
+        const btnLeft = document.getElementById("btn-left")
+        const btnRight = document.getElementById("btn-right")
+        let currentItem = 1
+        const items = document.querySelectorAll(".item")
+        const maxtems = items.length
+         btnRight.addEventListener("click", ()=>{
+            currentItem += 1
+            if (currentItem>maxtems-1) {
+                currentItem=1
+            }
+            items[currentItem].scrollIntoView({inline:"center",behavior:"smooth"})
+         })
+         btnLeft.addEventListener("click", ()=>{
+            currentItem -= 1
+            if(currentItem===0)
+                currentItem=maxtems
+            items[currentItem].scrollIntoView({inline:"center",behavior:"smooth"})
+         })
+
+    </script>
+</body>
+</html>
